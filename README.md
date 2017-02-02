@@ -3,7 +3,7 @@ One page two column resume template using XeTeX typesetting engine https://en.wi
 
 ##Instructions
 
-###Install XeLaTeX on Linux
+###Install XeTeX on Linux
 
 Using terminal:
 

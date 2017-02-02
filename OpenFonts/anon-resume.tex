@@ -1,0 +1,244 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% JB - One Page Two Column Resume
+% LaTeX Template
+% Version 1.0 (1-29-2017)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Figure out a smoother way for the document to flow onto the next page.
+% 2. Add styling information for a "Projects/Hacks" section.
+% 3. Add location/address information
+% 4. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% vx.x:	(add past version when changes are made)
+% 1. This describes what is fixed
+% 2. This describes what is fixed as well
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{First}{Last}{ \href{mailto:firstlast@gmail.com}{firstlast@gmail.com}\\
+***-***-**** | City, State\\[8pt]
+%\begin{flushleft}
+<Describe what you do>, and military veteran seeks transition into <desired> role.
+%\end{flushleft}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{*** University}
+\descript{BS in Computer Science}
+\location{Sep 2015 - Present | City, State}
+%College of Engineering \\
+\location{ GPA: *.** / 4.0 }
+\sectionsep
+
+\subsection{*** University}
+\descript{BS in Economics}
+\location{May 2010 | City, State}
+%Krannert School of Management \\
+\location{ Cum. GPA: *.** / 4.0 }
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+GitHub:// \href{https://github.com/<username>}{\bf <username>} \\
+LinkedIn:// \href{https://www.linkedin.com/in/<username>}{\bf <username>} \\
+Website:// \href{https://<name>.github.io}{\bf <name>.github.io} \\
+%YouTube://  \href{https://www.youtube.com/user/DeedyDash007}{\bf DeedyDash007} \\
+%Twitter://  \href{https://twitter.com/debarghya_das}{\bf @debarghya\_das} \\
+%Quora://  \href{https://www.quora.com/Debarghya-Das}{\bf Debarghya-Das}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Classes}
+Data Structures \\
+Analysis of Algorithms \\
+%Unix Tools and Scripting \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+%\subsection{Languages}
+\descript{Programming Languages}
+C++ \textbullet{} C \textbullet{} Python \textbullet{} Visual Basic \\[3pt]
+%\subsection{Tools}
+\descript{Tools}
+Git \\[3pt]
+%\subsection{Technologies}
+\descript{Technologies}
+Linux \textbullet{} Raspberry Pi 2 \\[3pt]
+%\location{Over 1000 lines:}
+%C \textbullet{} C++ \textbullet{} CSS \textbullet{} PHP \textbullet{} Assembly \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     DOD
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{DOD}
+Secret Clearance | 2012 - Present
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+\runsubsection{Text Adventure Game}
+\descript{| C++ Console App}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Developed on Linux using object-oriented programming with polymorphism and inheritance
+\item Player problem solves by interacting with environment
+\item Menu options change based on user choices and events
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Hackathon - Project}
+\descript{| Python}
+\begin{tightemize}
+\item Collaborated with 4 team members to win People's Choice award
+\item Alexa application reads a headline and related content based on keywords in news article
+\item Created Python script using untangle to parse RSS generated XML
+\item Setup GitHub repository for team use
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Langston's Ant Visualization}
+\descript{| C++ Console App}
+\begin{tightemize}
+\item Developed on Linux utilizing pointers and 2d array of animal objects
+\item Implemented predator vs prey movement across grid based on simple behavior rules
+\item User chooses grid size and animals' start location is random
+\item Designed behavior rules for predator/prey dynamic equilibrium
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Colorado River Level Check}
+\descript{| Website}
+\begin{tightemize}
+\item Built website using Express Node.js web application framework
+\item Frontend designed with HTML and CSS
+\item Calls RESTful web API for JSON data to update river levels
+\item Hosted on Raspberry Pi running Linux
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\runsubsection{Air Force Financial Management ***}
+\descript{Financial Analyst}
+\location{Aug 2012 – Present | City, State}
+\begin{tightemize}
+\item Built Microsoft Excel report creator with Visual Basic saving comptroller squadron 400 hours annually
+\item Report creator sorts imported finacial data and creates charts
+\item Wrote 27 analyses (total of 770M dollars) utilizing inflation, time value of money, and benefit/risk assessments to assist decision makers
+\end{tightemize}
+\sectionsep
+
+\runsubsection{US Army Reserve}
+\descript{| Sergeant}
+\location{Oct 2001 – Oct 2009 | City, State}
+\begin{tightemize}
+\item Completed Iraq deployment (May 2006 – May 2007) with 79 logistic truck convoys
+\item Led teams of 25 - 50 people as Assistant Convoy Commander or Logistics Commander
+\end{tightemize}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{Awards} 
+%\begin{tabular}{rll}
+%2014	     & top 52/2500  & KPCB Engineering Fellow\\
+%2014	     & 1\textsuperscript{st}/50  & Microsoft Coding Competition, Cornell\\
+%2013	     & National  & Jump Trading Challenge Finalist\\
+%2013     & 7\textsuperscript{th}/120 & CS 3410 Cache Race Bot Tournament  \\
+%2012     & 2\textsuperscript{nd}/150 & CS 3110 Biannual Intra-Class Bot Tournament \\
+%2011     & National & Indian National Mathematics Olympiad (INMO) Finalist \\
+%\end{tabular}
+%\sectionsep
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}

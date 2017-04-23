@@ -1,9 +1,9 @@
 # LaTeX-Two-Column-One-Page-Resume
 One page two column resume template using XeTeX typesetting engine https://en.wikipedia.org/wiki/XeTeX . This program allows you to take a .tex file, compile it, and produce a pdf.  The .tex file contains the content as text and related commands to format it accordingly. Original source for template was https://github.com/deedy/Deedy-Resume . From deedy source changed '.xtx' file extension to '.tex'. Verified to compile with XeLaTeX on Linux.
 
-##Instructions
+## Instructions
 
-###Install XeTeX on Linux
+### Install XeTeX on Linux
 
 Using terminal:
 

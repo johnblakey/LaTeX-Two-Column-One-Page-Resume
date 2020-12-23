@@ -7,7 +7,7 @@ The original source for template was https://github.com/deedy/Deedy-Resume .
 
 ### Install XeTeX on Debian
 
-####Terminal Commands
+#### Terminal Commands
 
 $ apt install texlive
 

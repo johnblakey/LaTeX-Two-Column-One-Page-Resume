@@ -9,14 +9,14 @@ The original source for template was https://github.com/deedy/Deedy-Resume .
 
 #### Terminal Commands
 
-$ apt install texlive
+> $ apt install texlive
 
-$ apt install texlive-xetex
+> $ apt install texlive-xetex
 
 ### Produce pdf from .tex File
 
 Navigate to directory with .tex file that contains your resume information
 
-$ xelatex <filename.tex>
+> $ xelatex <filename.tex>
 
 Outputs pdf in the same directory
